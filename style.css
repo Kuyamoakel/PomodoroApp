@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #5A7A5B;
+}
+
+#timer {
+    font-family: 'Lilita One', sans-serif;
+    color: #F4F1E8;
+    letter-spacing: 2px;
+    font-size: 3rem;
+}
+
+.break {
+    font-family: 'Lilita One', sans-serif;
+    color: #F4F1E8;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+
+.pomodoro-container {
+    background-color: #3D5A3E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: min(90%, 400px);
+    height: min(90%, 200px);
+    gap: 2rem;
+    border-radius: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.start-button, .pause-button, .restart-button {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Lilita One', sans-serif;
+    color: #ffffff;
+    /* background-color: #C17A52; */
+    background-color: #C17A52;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    transition: transform 0.2s ease;
+}
+
+.start-button:hover, .pause-button:hover, .restart-button:hover {
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none;
+}
+
+
+@font-face {
+    font-family: 'Lilita One';
+    src: url(assets/fonts/LilitaOne.woff2);
+}
