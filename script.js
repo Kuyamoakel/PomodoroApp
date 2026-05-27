@@ -12,8 +12,8 @@ const NatureSound = new Audio("assets/audio/NatureSound.mp3");
 const timesUp = new Audio("assets/audio/times-up.mp3");
 
 
-let timeleft = 1 * 5;
-let breakTime = 1 * 10;
+let timeleft = 25 * 60;
+let breakTime = 5 * 60;
 let interval = null;
 let isBreak = false;
 
@@ -73,6 +73,7 @@ function pauseTimer() {
 
 function resetTimer() {
     pauseTimer();
+    stopAllSounds();
     isBreak = false;
     timeleft = 25 * 60;
     breakDisplay.classList.add("hidden")
