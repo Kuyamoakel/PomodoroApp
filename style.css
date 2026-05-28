@@ -8,28 +8,27 @@ main {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #5A7A5B;
+    background-color: #2C241B;
 }
 
 .label {
-    color: whitesmoke;
+    color: #E8DCCB;
     font-family: "Cormorant Garamond", sans-serif;
     font-size: clamp(1.5rem, 3vw, 2rem);
     letter-spacing: 1.5px;
     opacity: 0.5;
-
 }
 
 .timer-container {
-    border-bottom: 1px solid wheat;
+    border-bottom: 1px solid #E8DCCB;
 }
 
 #timer {
     font-family: 'Fredoka', sans-serif;
-    color: #F4F1E8;
+    color: #E8DCCB;
     letter-spacing: 2px;
     font-weight: 100;
-    font-size: clamp(5rem, 15vw, 7rem);
+    font-size: clamp(4rem, 15vw, 7rem);
     line-height: 1;
     margin-bottom: 2rem;
 }
@@ -44,38 +43,35 @@ main {
 
 .time {
     font-family: 'Fredoka', sans-serif;
-    background: #C17A52;
-    border: none;
-    color: whitesmoke;
+    background: none;
+    border: 1px solid #F5EFE6;
+    color: #F5EFE6;
     flex: 1;
-    max-width: 120;
+    max-width: 100;
     padding: 0.5rem;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 3vw, 1.0rem);
     font-weight: 500;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     cursor: pointer;
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .time:hover {
     transform: scale(1.05);
-    background-color: #e29263;
 }
 
 .pomodoro-container {
-    background-color: #3D5A3E;
+    overflow: hidden;
+    background-color: #4A3F35;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    width: min(90%, 400px);
-    min-height: 250px;
-
-    padding: 1.5rem;
+    width: min(90%, 500px);
+    min-height: 300px;
     gap: 1rem;
-    
+    padding: 1.5rem 1rem;
     border-radius: 10px;
 }
 
@@ -90,14 +86,14 @@ main {
 .button-container button {
     flex: 1;
     max-width: 140px;
-    padding: 0.8rem 1.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
     font-family: 'Fredoka', sans-serif;
     font-size: 1rem;
-    color: #ffffff;
+    color: #E8DCCB;
     /* background-color: #C17A52; */
     background: transparent;
-    border: 1px solid whitesmoke;
+    border: 1px solid #F5EFE6;
     cursor: pointer;
     letter-spacing: 2px;
 
@@ -122,7 +118,7 @@ main {
 
 .session-info {
     font-family: 'Fredoka', sans-serif;
-    color: wheat;
+    color: #E8DCCB;
     font-size: 1rem;
     letter-spacing: 1.5px;
     opacity: 0.8;
