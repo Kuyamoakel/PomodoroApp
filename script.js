@@ -189,11 +189,11 @@ function switchMode() {
 
         if (sessionCount == 2) {
             alert("LET'S TAKE LONGER BREAK");
-            timeleft = focusMode * 2;
+            timeleft = breakMode * 2;
             // plus 5 minutes
         }
         else {
-            timeleft = focusMode;
+            timeleft = breakMode;
         }
         
         timesUp.play();
