@@ -8,6 +8,7 @@ const restartButton = document.getElementById("restart");
 const time25 = document.getElementById("time-1");
 const time45 = document.getElementById("time-2");
 const time60 = document.getElementById("time-3");
+const showModal = document.getElementById("modal-show");
 
 
 // sounds
@@ -15,7 +16,7 @@ const clickSound = new Audio("assets/audio/Click-Gun.mp3");
 const NatureSound = new Audio("assets/audio/NatureSound.mp3");
 const timesUp = new Audio("assets/audio/Success.mp3");
 
-let twentyFive = 1 * 1;
+let twentyFive = 25 * 60;
 let twentyBreak = 5 * 60;
 
 let fourtyFive = 45 * 60;
@@ -83,7 +84,7 @@ function unhideLabel() {
 }
 
 function updateSessionDisplay() {
-    document.getElementById("session-num").textContent = sessionCount + 1;
+    sessionNum = document.getElementById("session-num").textContent = sessionCount + 1;
 
     for (let i = 1; i <= 4; i++) {
         const dot = document.getElementById("dot-" + i);
@@ -91,9 +92,7 @@ function updateSessionDisplay() {
 
         if (sessionCount === 4) {
             sessionCount = 0;
-            
-    document.getElementById("session-num").textContent = sessionCount;
-
+            document.getElementById("session-num").textContent = sessionCount;
         }
         if (i <= sessionCount) {
             dot.classList.add("done");
@@ -136,6 +135,7 @@ function startTimer() {
 
         
         if (timeleft <= 0) {
+            showModal.classList.remove("hidden");
             timeleft = 0;
             updateTimer();
 
@@ -212,6 +212,10 @@ function switchMode() {
     }
 
     updateTimer();
+}
+
+function closeModal() {
+    showModal.classList.add("hidden");
 }
 
 time25.addEventListener("click", () => {
