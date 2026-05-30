@@ -16,7 +16,7 @@ const clickSound = new Audio("assets/audio/Click-Gun.mp3");
 const NatureSound = new Audio("assets/audio/NatureSound.mp3");
 const timesUp = new Audio("assets/audio/Success.mp3");
 
-let twentyFive = 25 * 60;
+let twentyFive = 1 * 1;
 let twentyBreak = 5 * 60;
 
 let fourtyFive = 45 * 60;
