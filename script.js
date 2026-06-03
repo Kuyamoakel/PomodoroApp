@@ -12,7 +12,7 @@ const showModal = document.getElementById("modal-show");
 
 
 // sounds
-const clickSound = new Audio("assets/audio/Click-Sound1.mp3");
+const clickSound = new Audio("assets/audio/clickSound.mp3");
 const NatureSound = new Audio("assets/audio/NatureSound.mp3");
 const timesUp = new Audio("assets/audio/Success.mp3");
 
@@ -38,6 +38,7 @@ let endtime;
 
 function clickingSound() {
     clickSound.play();
+    clickSound.currentTime = 0;
 }
 
 function stopAllSounds() {
