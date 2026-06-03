@@ -17,7 +17,7 @@ const NatureSound = new Audio("assets/audio/NatureSound.mp3");
 const timesUp = new Audio("assets/audio/Success.mp3");
 
 let fifthteen = 15 * 60;
-let fifthteenBreak = 5 * 60;
+let fifthteenBreak = 2.5 * 60;
 
 let twentyFive = 25 * 60;
 let twentyBreak = 8 * 60;
