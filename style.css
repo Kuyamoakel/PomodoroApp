@@ -7,9 +7,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     overflow: hidden;
-
     background:
     radial-gradient(circle at top left, rgba(193, 122, 82, 0.4), transparent 30%),
     radial-gradient(circle at bottom right, rgba(139, 94, 60, 0.3), transparent 25%),
@@ -171,6 +171,37 @@ main {
 
 .header-con {
     font-size: clamp(0.8rem, 2vw, 1.3rem);
+}
+
+.progress-container {
+    /* GLASS EFFECT */
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    /* GLASS BORDER */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    /*SHADOW GLASS*/
+    box-shadow: 
+        0 8px 32px rgb(0, 0, 0, 0.25),
+        inset 0 0 10px rgba(255, 255, 255, 0.03);
+
+    
+
+    font-family: 'Fredoka', sans-serif;
+    color: #EDEAE5;
+    letter-spacing: 2px;
+    line-height: 1.2;
+
+    width: min(90%, 500px);
+    min-height: 50px;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+
+    border-radius: 10px;
+
+
 }
 
 .modal-container {
