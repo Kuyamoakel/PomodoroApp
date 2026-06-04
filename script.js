@@ -9,6 +9,8 @@ const time25 = document.getElementById("time-1");
 const time45 = document.getElementById("time-2");
 const time60 = document.getElementById("time-3");
 const showModal = document.getElementById("modal-show");
+const focusTime = document.getElementById("focus-time");
+const streakTimes = document.getElementById("streak-times");
 
 
 // sounds
@@ -33,6 +35,8 @@ let timeleft = focusMode;
 let interval = null;
 let isBreak = false;
 let sessionCount = 0;
+let totalFocusMinutes = 0;
+let streakCount = 0;
 
 let endtime;
 
@@ -119,7 +123,7 @@ function updateTimer() {
 
 function startTimer() {
     if (interval !== null) return;
-
+    
     NatureSound.loop = true;
     NatureSound.play();
 
@@ -145,6 +149,7 @@ function startTimer() {
             stopAllSounds();
 
             switchMode();
+            updateProgress();
             startTimer();
 
             return;
@@ -152,6 +157,16 @@ function startTimer() {
         updateTimer();
 
     }, 250);
+}
+
+function updateProgress() {
+    if (isBreak) {
+        totalFocusMinutes += Math.floor(focusMode / 60);
+        focusTime.textContent = totalFocusMinutes;
+
+        streakCount++;
+        streakTimes.textContent = streakCount;
+    }
 }
 
 function pauseTimer() {
