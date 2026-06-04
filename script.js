@@ -155,7 +155,12 @@ function startTimer() {
     unhideLabel();
     startButton.classList.add("start-hidden");
     unHideButtons();
-    hideBigContainer();
+
+    if (isBreak) {
+        unHideBigContainer();
+    } else {
+        hideBigContainer();
+    }
 
     endtime = Date.now() + timeleft * 1000;
 
@@ -230,6 +235,7 @@ function switchMode() {
     isBreak = !isBreak;
 
     if (isBreak) {
+        unHideBigContainer();
         sessionCount++;
 
         if (sessionCount == 2) {
@@ -248,6 +254,7 @@ function switchMode() {
         
         updateSessionDisplay();
     } else {
+        hideBigContainer();
         alert("READY TO WORK AGAIN?!")
 
         if (sessionCount >= 4) sessionCount = 0;
