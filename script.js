@@ -100,6 +100,17 @@ function hideBigContainer() {
 function unHideBigContainer() {
     bigContainer.classList.remove("hidden");
 }
+// emergency function
+function resetStats() {
+    localStorage.removeItem("focusTime");
+    localStorage.removeItem("streakCount");
+
+    totalFocusMinutes = 0;
+    streakCount = 0;
+
+    focusTime.textContent = 0;
+    streakTimes.textContent = 0;
+}
 
 function updateSessionDisplay() {
     sessionNum = document.getElementById("session-num").textContent = sessionCount + 1;
