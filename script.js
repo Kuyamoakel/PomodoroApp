@@ -19,8 +19,8 @@ const clickSound = new Audio("assets/audio/clickSound.mp3");
 const NatureSound = new Audio("assets/audio/NatureSound.mp3");
 const timesUp = new Audio("assets/audio/Success.mp3");
 
-let fifthteenMinutes = 15 * 60;
-let fifthteenBreak = 2.5 * 60;
+let fifteenMinutes = 15 * 60;
+let fifteenBreak = 2.5 * 60;
 
 let twentyFiveMinutes = 25 * 60;
 let twentyBreak = 8 * 60;
@@ -28,8 +28,8 @@ let twentyBreak = 8 * 60;
 let thirtyMinutes = 30 * 60;
 let thirthyBreak = 10 * 60; 
 
-let focusMode = fifthteenMinutes;
-let breakMode = fifthteenBreak;
+let focusMode = fifteenMinutes;
+let breakMode = fifteenBreak;
 
 let timeleft = focusMode;
 
@@ -113,7 +113,7 @@ function resetStats() {
 }
 
 function updateSessionDisplay() {
-    sessionNum = document.getElementById("session-num").textContent = sessionCount + 1;
+    const sessionNum = document.getElementById("session-num").textContent = sessionCount + 1;
 
     for (let i = 1; i <= 4; i++) {
         const dot = document.getElementById("dot-" + i);
@@ -280,8 +280,8 @@ function closeModal() {
 }
 
 time25.addEventListener("click", () => {
-    focusMode = fifthteenMinutes;
-    breakMode = fifthteenBreak;
+    focusMode = fifteenMinutes;
+    breakMode = fifteenBreak;
     pauseTimer();
     timeleft = focusMode;
     updateTimer();
