@@ -124,7 +124,7 @@ main {
     padding: 1.5rem 1rem;
 
     border-radius: 10px;
-    animation: floating 5s ease infinite;
+    animation: popIn 0.5s ease;
 }
 
 .button-container {
