@@ -11,6 +11,7 @@ const time60 = document.getElementById("time-3");
 const showModal = document.getElementById("modal-show");
 const focusTime = document.getElementById("focus-time");
 const streakTimes = document.getElementById("streak-times");
+const bigContainer = document.getElementById("bigContainer");
 
 
 // sounds
@@ -88,6 +89,14 @@ function unhideLabel() {
     label.classList.remove("hidden");
 }
 
+function hideBigContainer() {
+    bigContainer.classList.add("hidden");
+}
+
+function unHideBigContainer() {
+    bigContainer.classList.remove("hidden");
+}
+
 function updateSessionDisplay() {
     sessionNum = document.getElementById("session-num").textContent = sessionCount + 1;
 
@@ -131,6 +140,7 @@ function startTimer() {
     unhideLabel();
     startButton.classList.add("start-hidden");
     unHideButtons();
+    hideBigContainer();
 
     endtime = Date.now() + timeleft * 1000;
 
@@ -172,6 +182,7 @@ function updateProgress() {
 function pauseTimer() {
     NatureSound.pause();
     NatureSound.currentTime = 0;
+    unHideBigContainer();
     
     clearInterval(interval);
     interval = null;
