@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 main {
@@ -142,7 +143,7 @@ main {
 .session-info {
     font-family: 'Fredoka', sans-serif;
     color: #EDEAE5;
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 4vw, 1rem);
     letter-spacing: 1.5px;
     opacity: 0.8;
     font-weight: 500;
@@ -150,6 +151,7 @@ main {
 
 .session-dots {
     display: flex;
+    justify-content: center;
     gap: 8px;
 }
 
@@ -174,6 +176,14 @@ main {
     font-size: clamp(0.8rem, 2vw, 1.3rem);
 }
 
+.big-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+
+    width: min(90%, 500px);
+}
+
 .progress-container {
     /* GLASS EFFECT */
     background-color: rgba(255, 255, 255, 0.08);
@@ -188,19 +198,24 @@ main {
         0 8px 32px rgb(0, 0, 0, 0.25),
         inset 0 0 10px rgba(255, 255, 255, 0.03);
 
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
 
     font-family: 'Fredoka', sans-serif;
     color: #EDEAE5;
     letter-spacing: 2px;
     line-height: 1.2;
 
-    width: min(90%, 500px);
+    width: 100%;
     min-height: 50px;
-    gap: 1rem;
+    gap: 5px;
     padding: 1.5rem 1rem;
 
     border-radius: 10px;
+    font-size: clamp(0.8rem, 4vw, 1rem);
 
 
 }
