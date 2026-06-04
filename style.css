@@ -9,6 +9,7 @@ main {
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    gap: 5px;
     overflow: hidden;
     background:
     radial-gradient(circle at top left, rgba(193, 122, 82, 0.4), transparent 30%),
