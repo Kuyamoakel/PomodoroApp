@@ -35,9 +35,13 @@ let timeleft = focusMode;
 
 let interval = null;
 let isBreak = false;
+
 let sessionCount = 0;
-let totalFocusMinutes = 0;
-let streakCount = 0;
+let totalFocusMinutes = 
+    Number(localStorage.getItem("focusTime")) || 0;
+
+let streakCount = 
+    Number(localStorage.getItem("streakCount")) || 0;
 
 let endtime;
 
@@ -176,6 +180,9 @@ function updateProgress() {
 
         streakCount++;
         streakTimes.textContent = streakCount;
+
+        localStorage.setItem("focusTime", totalFocusMinutes);
+        localStorage.setItem("streakCount", streakCount);
     }
 }
 
@@ -283,5 +290,7 @@ startButton.addEventListener("click", startTimer);
 pauseButton.addEventListener("click", pauseTimer);
 restartButton.addEventListener("click", resetTimer);
 
+focusTime.textContent = totalFocusMinutes;
+streakTimes.textContent = streakCount;
 updateTimer();
 updateSessionDisplay();
