@@ -184,6 +184,11 @@ main {
     width: min(90%, 500px);
 }
 
+.progress-container h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+}
+
 .progress-container {
     /* GLASS EFFECT */
     background-color: rgba(255, 255, 255, 0.08);
@@ -299,6 +304,11 @@ main {
 @font-face {
     font-family: 'Cormorant Garamond';
     src: url(assets/fonts/Cormorant_Garamond/CormorantGaramond-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Lilita';
+    src: url(assets/fonts/LilitaOne.woff2);
 }
 
 @font-face {
