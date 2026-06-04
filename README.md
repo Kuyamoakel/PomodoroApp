@@ -13,7 +13,12 @@ This is currently the first version of the project. It doesn’t have many featu
 ## PREVIEW
 ![Pomodoro V1.0](assets/images/v1.0.png)
 
+---
+
+
 ### v1.1 - June 2026
+Version 1.1 took one week to develop and required a lot of trial and error. For future versions, I plan to add a to-do list feature, improve the website's design, and introduce leaderboards. I am also planning to develop a mobile version of the application.
+
  - Local Storage Support
  - Better UI Animations
  - Time Choices (15, 25, and 30 minutes)
