@@ -327,7 +327,7 @@ main {
         transform: scale(1);
     }
     50% {
-        transform: scale(0.98);
+        transform: scale(0.97);
     }
     100% {
         transform: translateY(0);
