@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background:
+    radial-gradient(circle at top left, rgba(193, 122, 82, 0.4), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(139, 94, 60, 0.3), transparent 25%),
+        #0D1117;
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -12,10 +19,27 @@ main {
     height: 100vh;
     gap: 5px;
     overflow: hidden;
-    background:
-    radial-gradient(circle at top left, rgba(193, 122, 82, 0.4), transparent 30%),
-    radial-gradient(circle at bottom right, rgba(139, 94, 60, 0.3), transparent 25%),
-        #0D1117;
+}
+
+.nav-container {
+    padding: 1rem;
+    background-color: #0d111759;
+    position: sticky;
+    z-index: 1000;
+    border-bottom: 1px solid #0d111731;
+}
+
+.reset-button {
+    padding: 0.6rem;
+    border-radius: 10px;
+    border: 1px solid #EDEAE5;
+    background: transparent;
+    color: #EDEAE5;
+    font-family: 'Fredoka', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0.5;
 }
 
 .label {
