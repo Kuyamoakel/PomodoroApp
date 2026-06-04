@@ -120,7 +120,7 @@ main {
     color: #DEECFF;
     /* background-color: #C17A52; */
     background: transparent;
-    border: 1px solid #C6CFFF;
+    border: 1px solid #EDEAE5;
     cursor: pointer;
     letter-spacing: 2px;
 
@@ -190,8 +190,8 @@ main {
 
 .progress-container h1 {
     font-family: 'Fredoka', sans-serif;
-    color: #DEECFF;
     opacity: 0.7;
+    color: #DEECFF;
     font-weight: 600;
 }
 
@@ -216,7 +216,9 @@ main {
     flex: 1;
 
     font-family: 'Fredoka', sans-serif;
-    color: #C6CFFF;
+    color: #DEECFF;
+    font-weight: 600;
+    opacity: 0.8;
     letter-spacing: 2px;
     line-height: 1.2;
 
