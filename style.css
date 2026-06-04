@@ -40,6 +40,13 @@ main {
     font-size: 1rem;
     font-weight: 600;
     opacity: 0.5;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s;
+}
+
+.reset-button:hover {
+    background-color: #928c8c;  
+    transform: scale(1.1);  
 }
 
 .label {
