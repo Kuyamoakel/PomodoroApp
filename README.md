@@ -1,9 +1,10 @@
 # Pomodoro App Project
 I decided to make this project because I enjoy using the Pomodoro technique, and I realized I could build one myself.
 
-This is currently the first version of the project. It doesn’t have many features yet, but it’s fully functional, and I plan to improve it step by step.
 
 ### v1.0 - June 2026
+This is currently the first version of the project. It doesn’t have many features yet, but it’s fully functional, and I plan to improve it step by step.
+
 - 25 minutes Pomodoro.
 - 5-minutes break.
 - 4 Pomodoro sessions per cycle (100 minutes of focus time and 20 minutes of breaks).
@@ -14,7 +15,6 @@ This is currently the first version of the project. It doesn’t have many featu
 ![Pomodoro V1.0](assets/images/v1.0.png)
 
 ---
-
 
 ### v1.1 - June 2026
 Version 1.1 took one week to develop and required a lot of trial and error. For future versions, I plan to add a to-do list feature, improve the website's design, and introduce leaderboards. I am also planning to develop a mobile version of the application.
