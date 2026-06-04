@@ -13,9 +13,6 @@ This is currently the first version of the project. It doesn’t have many featu
 ## PREVIEW
 ![Pomodoro V1.0](assets/images/v1.0.png)
 
-## LIVE DEMO
-https://kuyamoakel.github.io/PomodoroApp/
-
 ### v1.1 - June 2026
  - Local Storage Support
  - Better UI Animations
@@ -23,4 +20,5 @@ https://kuyamoakel.github.io/PomodoroApp/
  - Progress Tracker
 
 ## PREVIEW
-![Pomdoro V1.1] (assets/images/v1.1.png)
+
+![Pomodoro V1.1](assets/images/v1.1.png)
