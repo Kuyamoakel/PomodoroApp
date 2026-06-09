@@ -19,13 +19,13 @@ const clickSound = new Audio("assets/audio/clickSound.mp3");
 const NatureSound = new Audio("assets/audio/NatureSound.mp3");
 const timesUp = new Audio("assets/audio/Success.mp3");
 
-let fifteenMinutes = 15 * 60;
-let fifteenBreak = 2.5 * 60;
+let fifteenMinutes = 25 * 60;
+let fifteenBreak = 5 * 60;
 
-let twentyFiveMinutes = 25 * 60;
-let twentyBreak = 8 * 60;
+let twentyFiveMinutes = 45 * 60;
+let twentyBreak = 7 * 60;
 
-let thirtyMinutes = 30 * 60;
+let thirtyMinutes = 60 * 60;
 let thirthyBreak = 10 * 60; 
 
 let focusMode = fifteenMinutes;
