@@ -206,6 +206,8 @@ function pauseTimer() {
     NatureSound.pause();
     NatureSound.currentTime = 0;
     unHideBigContainer();
+    hideLabel();
+    unhideTimers();
     
     clearInterval(interval);
     interval = null;
