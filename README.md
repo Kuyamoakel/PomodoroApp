@@ -1,4 +1,4 @@
-# Pomodoro App Project!
+# Pomodoro App Project
 I decided to make this project because I enjoy using the Pomodoro technique, and I realized I could build one myself.
 
 
